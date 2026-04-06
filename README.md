@@ -37,12 +37,12 @@ While the initial focus was the `netdev` list, OnboardingFlow is designed to be 
 
 ```
 .
-├── app.py              # Streamlit dashboard application
-├── input.json          # Configuration file (change the input list here)
-├── data/
-│   ├── funnel_summary.json   # Global aggregated metrics
-│   └── cohort_retention.csv  # Year-by-year progression data
-├── notebooks/          # Spark ETL processing scripts
+├── lkml_onboarding_funnel.ipynb     # Spark ETL - Jupiter Notebook
+├── input.json                       # Configuration file 
+├── requirements.txt                 # Requirements for Jupiter Notebook 
+├── dashboard/
+│   ├── app.py                       # Streamlit app
+│   └── requirements.txt             # Requirements for streamlit app
 └── README.md
 ```
 
