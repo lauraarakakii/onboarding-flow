@@ -13,8 +13,8 @@ import numpy as np
 # ─── Load data ─────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("lauraarakakii/onboarding-flow/main/dashboard/cohort_retention.csv")
-    with open("lauraarakakii/onboarding-flow/main/dashboard/funnel_summary.json") as f:
+    df = pd.read_csv("/mount/src/onboarding-flow/dashboard/cohort_retention.csv")
+    with open("/mount/src/onboarding-flow/dashboard/funnel_summary.json") as f:
         funnel = json.load(f)
     return df, funnel
 
