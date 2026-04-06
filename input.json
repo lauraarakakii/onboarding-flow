@@ -1,0 +1,23 @@
+{
+  "base_dir": "./input_data",
+  "list_name": "org.kernel.vger.linux-pci",
+  "analysis_years": {
+    "start": 2004,
+    "end": 2025
+  },
+  "retention_months": [6, 12],
+  "regex": {
+    "patch_subject": "(?i)\\[patch",
+    "review_body": "(?i)(Reviewed-by|Acked-by)\\s*:"
+  },
+  "columns": {
+    "from_col": "from",
+    "subject_col": "subject",
+    "body_col": "raw_body",
+    "date_col": "date",
+    "msg_id_col": "message-id",
+    "reply_col": "in-reply-to",
+    "refs_col": "references"
+  },
+  "export_dir": "output_data/funnel_exports"
+}
